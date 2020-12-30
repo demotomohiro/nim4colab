@@ -28,7 +28,19 @@ def nimInstallIfNotExist(branch, root):
   nimExe = nimDir / "bin" / "nim"
   if not nimExe.is_file():
     print(f"Installing Nim {branch}")
-    label = "devel" if branch == "devel" else "version"
+    if branch == "devel":
+      label = "devel"
+    else:
+      # Get latest stable version number
+      f = urllib.request.urlopen("https://api.github.com/repos/nim-lang/Nim/tags")
+      tree = json.loads(f.read().decode('utf-8'))
+      # latestStableVer is a text like 1.4.2
+      latestStableVer = tree[0]['name'][1:]
+      x = latestStableVer.find(".")
+      major = latestStableVer[:x]
+      y = latestStableVer.find(".", x + 1)
+      minor = latestStableVer[x + 1: y]
+      label = f"version-{major}-{minor}"
     archivePath = root / f"nim-{branch}.tar.xz"
     downloadNim(archivePath, label)
     nimParDir = nimDir.parent
