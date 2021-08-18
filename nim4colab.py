@@ -68,7 +68,7 @@ def nimBin(exe, param, branch, root = pathlib.Path.home()):
   print(ret.stdout)
 
 def nimRun(param, code, branch):
-  nimCode = pathlib.Path.home() / "code.nim"
+  nimCode = pathlib.Path.home() / "code.nims"
   nimCode.write_text(code)
   nimBin("nim", param + " " + str(nimCode), branch)
 
