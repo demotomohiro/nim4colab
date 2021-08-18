@@ -88,11 +88,11 @@ def nimdev(line, cell = None):
 
 @register_cell_magic
 def nimc(line, cell):
-  nimRun("c -r --verbosity:0" + line, cell, "stable")
+  nimRun("c --verbosity:0" + line, cell, "stable")
 
 @register_cell_magic
 def nims(line, cell):
-  nimRun("e -r --verbosity:0 " + line, cell, "stable")
+  nimRun("e --verbosity:0 " + line, cell, "stable")
 
 @register_cell_magic
 def nimdevc(line, cell):

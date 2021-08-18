@@ -25,12 +25,12 @@ User code is saved to ``~/code.nims`` file before ``nim`` command is called.
 
 ### %%nimc [options]
 Compile and run Nim code.
-Equivalent to calling ``nim c -r --verbosity:0 [options] ~/code.nim``
+Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nim``
 
 ### %%nims [options]
-Run the code as a Nim script (without compiling it).
+Run the code as a Nim script (without compiling it).  
 ATTENTION: not all the Nim libraries are supported in Nimscript, though most of them are.
-Equivalent to calling ``nim c -r --verbosity:0 [options] ~/code.nim``
+Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nim``
 
 ### %%nim command [options]
 Equivalent to calling ``nim command [options] ~/code.nim``
@@ -54,7 +54,7 @@ Execute ``nimble [parameters]``.
 
 Refer [Nim Compiler User Guide](https://nim-lang.org/docs/nimc.html).
 
-## Samples
+<!-- ## Samples
 - [Basic](https://colab.research.google.com/drive/1aNmsJmgnxz-4yr1hT0ZdHh9-XQ_8dcRk)
 - [Make PNG image](https://colab.research.google.com/drive/15w2dtk9QE8QDTsqMeRnWCzR7f2kSseoq)
-- [Make animation PNG using EGL & OpenGL](https://colab.research.google.com/drive/1J0B0qVvovrJZJI1OU75jIMUjWnymi_6G)
+- [Make animation PNG using EGL & OpenGL](https://colab.research.google.com/drive/1J0B0qVvovrJZJI1OU75jIMUjWnymi_6G) -->
