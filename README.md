@@ -14,7 +14,7 @@ Then, you can use line and cell magics in Nim4Colab extenson.
 
 ```
 #Run Nim code with nimc cell magic.
-%%nim
+%%nims
 echo "Nim version is ", NimVersion
 ```
 
