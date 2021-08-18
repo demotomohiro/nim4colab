@@ -24,15 +24,15 @@ User code is saved to ``~/code.nims`` file before ``nim`` command is called.
 
 ### %%nimc [options]
 Compile and run Nim code.
-Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nim``
+Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nims``
 
 ### %%nims [options]
 Run the code as a Nim script (without compiling it).  
 ATTENTION: not all the Nim libraries are supported in Nimscript, though most of them are.
-Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nim``
+Equivalent to calling ``nim c --verbosity:0 [options] ~/code.nims``
 
 ### %%nim command [options]
-Equivalent to calling ``nim command [options] ~/code.nim``
+Equivalent to calling ``nim command [options] ~/code.nims``
 
 ### %%nimdevc [options]
 Same to ``%%nimc`` but uses devel branch Nim.
