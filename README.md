@@ -13,9 +13,8 @@ This code download, install and load Nim4Colab extension.
 Then, you can use line and cell magics in Nim4Colab extenson.
 
 ```
-#Run Nim code with nimc cell magic.
 %%nims
-echo "Nim version is ", NimVersion
+echo "Nim version ", NimVersion
 ```
 
 Nim4Colab downloads and installs latest Nim from [Nim nightlies](https://github.com/nim-lang/nightlies) when first time one of Nim4Colab's magic is called.
