@@ -1,5 +1,5 @@
 # Nim4Colab
-Nim4Colab is a IPython extension to use Nim language on Google Colaboratory.
+Nim4Colab is a IPython extension to use [Nim language](https://nim-lang.org) on [Google Colaboratory](https://colab.research.google.com/).
 
 ## How to use
 Copy and paste following code to a cell on Google Colaboratory and run.
